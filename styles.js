@@ -1,11 +1,13 @@
+import { withSafeAreaInsets } from "react-native-safe-area-context";
+
 const styles={
-    app: {
+    grid: {
       flex:3,
     },
     row: {
       flexDirection: "row"
     },
-    'col':  {
+    col:  {
       borderWidth:  0,
       flex:  1
     },
@@ -18,6 +20,15 @@ const styles={
       paddingBottom:20,
       textAlign: "center",
       fontSize:25,
+    },
+    wallpaper:{
+      width:412,
+    },
+    button:{
+      width:200,
+      backgroundColor:'white',
+      color:'black',
+
     },
   };
 

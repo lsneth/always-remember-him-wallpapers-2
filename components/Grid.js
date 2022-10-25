@@ -1,6 +1,8 @@
-import {View} from 'react-native'
+import {View, Image, ScrollView, Button, TouchableOpacity} from 'react-native'
+import styles from '../styles.js'
+import SetWallpaperScreen from './SetWallpaperScreen'
 
-export default function Grid(){
+export default function Grid({navigation}){
     // const rows=imageData.map(imageData=> <Row imageData={imageData}/>)
     const Row = ({children}) => (
         <View style={styles.row}>{children}</View>
@@ -12,13 +14,17 @@ export default function Grid(){
     }
 
     return(
-        <View>
+        <ScrollView style={styles.grid}>
             <Row>
                 <Col>
                     {/* for dynamic rendering, hardcoded for now */}
                     {/* <Image source={require([`../assets/images/jesus${1}.png`])} style={styles.image} ></Image> */}
-                    <Image source={require('../assets/images/jesus1.png')} style={styles.image}
-                    onPress={() =>navigation.navigate('SetWallpaperScreen', { imageSource: '../assets/images/jesus1.png' })}></Image>
+                    <TouchableOpacity onPress={() =>navigation.navigate('Set Wallpaper', { imageSource: '../assets/images/jesus1.png' })}>
+                        <Image
+                            source={require('../assets/images/jesus1.png')}
+                            style={styles.image}
+                        />
+                    </TouchableOpacity>
                 </Col>
                 <Col>
                     <Image source={require('../assets/images/jesus2.png')} style={styles.image}></Image>
@@ -54,6 +60,6 @@ export default function Grid(){
                     <Image source={require('../assets/images/jesus10.png')} style={styles.image}></Image>
                 </Col>
             </Row>
-        </View>
+        </ScrollView>
     );
 }
