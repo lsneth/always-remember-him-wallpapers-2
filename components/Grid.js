@@ -19,7 +19,7 @@ export default function Grid({navigation}){
                 <Col>
                     {/* for dynamic rendering, hardcoded for now */}
                     {/* <Image source={require([`../assets/images/jesus${1}.png`])} style={styles.image} ></Image> */}
-                    <TouchableOpacity onPress={() =>navigation.navigate('Set Wallpaper', { imageSource: '../assets/images/jesus1.png' })}>
+                    <TouchableOpacity onPress={() =>navigation.navigate('Set Wallpaper', { imageSource: require('../assets/images/jesus1.png') })}>
                         <Image
                             source={require('../assets/images/jesus1.png')}
                             style={styles.image}
