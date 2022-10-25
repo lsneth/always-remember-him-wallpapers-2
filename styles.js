@@ -14,8 +14,8 @@ const styles={
       height:270,
     },
     title:{
-      paddingTop:50,
-      paddingBottom:10,
+      paddingTop:60,
+      paddingBottom:20,
       textAlign: "center",
       fontSize:25,
     },
