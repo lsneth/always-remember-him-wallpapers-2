@@ -1,12 +1,6 @@
 # Always Remember Him Wallpapers
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description of your app.  Describe how to use the app.}
-
-{Describe your purpose for creating this app.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the app running and a walkthrough of the code.}
+This is a mobile app created in React Native that provides wallpapers of Jesus Christ. It's purpose is to help people remember Christ in their every day lives. I am creating this project to get a basic understanding of React Native and practice JavaScript and JSX.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
